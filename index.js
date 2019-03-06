@@ -3,5 +3,5 @@ const createLogger = require("./logger");
 const dirinfo = require("./dirinfo");
 
 const logger = createLogger(__filename);
-
-console.log(dirinfo(process.cwd()));
+const dir_path = process.argv[2];
+console.log(dirinfo(dir_path));
